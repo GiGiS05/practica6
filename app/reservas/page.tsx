@@ -38,10 +38,10 @@ export default async function PaginaReservas({
       </div>
 
       <div className="flex gap-2 mb-6">
-        <Link href="/reservas" className={`px-3 py-1 rounded text-sm ${!estado ? "bg-gray-200 font-medium" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Todas</Link>
+        <Link href="/reservas" className={`px-3 py-1 rounded text-sm ${!estado ? "bg-gray-200 font-medium text-gray-600" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Todas</Link>
         <Link href="/reservas?estado=pendiente" className={`px-3 py-1 rounded text-sm ${estado === "pendiente" ? "bg-yellow-100 text-yellow-800 font-medium" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Pendientes</Link>
         <Link href="/reservas?estado=confirmada" className={`px-3 py-1 rounded text-sm ${estado === "confirmada" ? "bg-green-100 text-green-800 font-medium" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Confirmadas</Link>
-        <Link href="/reservas?estado=cancelada" className={`px-3 py-1 rounded text-sm ${estado === "cancelada" ? "bg-gray-200 text-gray-800 font-medium" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Canceladas</Link>
+        <Link href="/reservas?estado=cancelada" className={`px-3 py-1 rounded text-sm ${estado === "cancelada" ? "bg-red-200 text-red-800 font-medium" : "bg-gray-50 text-gray-600 hover:bg-gray-100"}`}>Canceladas</Link>
       </div>
 
       {reservas.length === 0 ? (

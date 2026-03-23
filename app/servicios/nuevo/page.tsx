@@ -23,7 +23,7 @@ export default function PaginaNuevoServicio() {
     <div className="max-w-md">
       <h1 className="text-xl font-semibold mb-6">Nuevo servicio</h1>
 
-      <form action={accion} className="space-y-5">
+      <form action={accion} className="space-y-5 text-gray-600">
         <div>
           <label className={label}>Nombre</label>
           <input name="nombre" type="text" className={input} />

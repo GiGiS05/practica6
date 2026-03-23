@@ -28,7 +28,7 @@ export default async function PaginaServicios() {
             className={`${tarjeta} flex items-center justify-between`}
           >
             <div>
-              <p className="font-medium text-sm">{servicio.nombre}</p>
+              <p className="font-medium text-sm text-gray-600">{servicio.nombre}</p>
               <p className="text-xs text-gray-400">
                 {servicio.duracion} min — {servicio._count.reservas} reserva(s)
               </p>
